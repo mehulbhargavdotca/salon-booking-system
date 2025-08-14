@@ -1,0 +1,208 @@
+/* Dena Beauty Salon - Custom Styles */
+
+:root {
+    --primary-color: #d4af37;
+    --secondary-color: #8b7355;
+    --accent-color: #f5f5dc;
+    --dark-color: #2c2c2c;
+    --light-color: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.login-body {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-header {
+    background-color: var(--primary-color) !important;
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.table th {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.sidebar {
+    background-color: var(--dark-color);
+    min-height: 100vh;
+    padding: 0;
+}
+
+.sidebar .nav-link {
+    color: var(--light-color);
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.service-card {
+    transition: transform 0.2s;
+    border-left: 4px solid var(--primary-color);
+}
+
+.service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.price-list {
+    background-color: var(--light-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.category-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.salon-header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, var(--accent-color), var(--light-color));
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.salon-name {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.salon-slogan {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    color: var(--dark-color);
+    font-size: 1.1rem;
+}
+
+.book-appointment-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    color: var(--light-color);
+    transition: all 0.3s;
+}
+
+.book-appointment-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: var(--light-color);
+}
+
+.time-slot {
+    margin: 5px;
+    padding: 8px 15px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.time-slot:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.time-slot.selected {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.badge {
+    background-color: var(--primary-color) !important;
+}
+
+@media (max-width: 768px) {
+    .salon-name {
+        font-size: 2rem;
+    }
+    
+    .salon-slogan {
+        font-size: 1rem;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+}
